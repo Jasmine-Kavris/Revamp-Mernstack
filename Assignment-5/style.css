@@ -1,0 +1,45 @@
+.container {
+  font-family: Roboto;
+  color: white;
+  background-image: url('https://ik.imagekit.io/2d5drkycr/Revamp-Mernstack/todolistbg.png_updatedAt=1700761069523?updatedAt=1748129528143');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 350px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  padding-left: 80px;
+
+}
+
+.head>p {
+  font-size: 17px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.read_book>p {
+  font-size: 17px;
+}
+
+button {
+  color: white;
+  margin-left: 135px;
+  margin-bottom: 6px;
+  padding: 8px 20px 8px 20px;
+  background-color: orange;
+  font-weight: bold;
+  font-size: large;
+}
+
+a {
+  margin-left: 117px;
+  color: white;
+  font-size: 13px;
+}
