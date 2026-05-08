@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <!-- Tailwind CSS CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="flex items-center justify-center min-h-screen bg-blue-100">
+  <div class="flex flex-col items-center space-y-6">
+    <!-- Title -->
+    <h1 class="text-5xl font-bold">Counter</h1>
+    
+    <!-- Counter Number -->
+    <p id="count" class="text-7xl font-extrabold text-black">0</p>
+    
+    <!-- Buttons -->
+    <div class="flex space-x-4">
+      <button id="descre" class="px-6 py-3 text-2xl bg-red-500 text-white rounded-lg hover:bg-red-600">DECREASE</button>
+      <button id="reset" class="px-6 py-3 text-2xl bg-gray-500 text-white rounded-lg hover:bg-gray-600">RESET</button>
+      <button id="incre" class="px-6 py-3 text-2xl bg-green-500 text-white rounded-lg hover:bg-green-600">INCREASE</button>
+    </div>
+  </div>
+
+  <script>
+    var count = document.getElementById("count");
+    var decre = document.getElementById("decre");
+    var reset = document.getElementById("reset");
+    var incre = document.getElementById("incre");
+
+    function updateColor() {
+      let value = parseInt(count.textContent);
+      if (value > 0) {
+        count.className = "text-7xl font-extrabold text-green-600";
+      } else if (value < 0) {
+        count.className = "text-7xl font-extrabold text-red-600";
+      } else {
+        count.className = "text-7xl font-extrabold text-black";
+      }
+    }
+
+    incre.addEventListener("click", () => {
+      count.textContent = parseInt(count.textContent) + 1;
+      updateColor();
+    });
+
+    decre.addEventListener("click", () => {
+      count.textContent = parseInt(count.textContent) - 1;
+      updateColor();
+    });
+
+    reset.addEventListener("click", () => {
+      count.textContent = 0;
+      updateColor();
+    });
+  </script>
+</body>
+</html>
+
+
