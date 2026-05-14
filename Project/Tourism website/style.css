@@ -1,0 +1,14 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Main container  */
+.bg-main-container{
+  background-image: url('https://ik.imagekit.io/2d5drkycr/Revamp-Mernstack/Tourism%20Website/sea-ocean?updatedAt=1748349383665');
+}
+/* Places container */
+.bg-places-container{
+  background-image: url('https://ik.imagekit.io/2d5drkycr/Revamp-Mernstack/Tourism%20Website/taj-mahal?updatedAt=1748349421442');
+  width: 300px;
+  height: 630px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

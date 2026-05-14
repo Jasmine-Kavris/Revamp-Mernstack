@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header-section-bg{
+  background-image: url('https://ik.imagekit.io/2d5drkycr/Revamp-Mernstack/Food%20store/foodmunch-banner-bg.png?updatedAt=1748355000487');
+
+  background-size: cover;
+}
